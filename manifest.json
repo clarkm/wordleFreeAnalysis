@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Wordle free analysis",
+  "version": "1.0",
+  "description": "Hides the footer nag to give you a free ananylsis of your wordle.",
+  "permissions": [
+  "activeTab"
+],
+  "content_scripts": [
+    {
+      "matches": ["https://nytimes.com/*","https://www.nytimes.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
